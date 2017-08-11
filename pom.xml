@@ -16,12 +16,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>1.2.4</version>
@@ -60,6 +54,11 @@
             <groupId>com.vimalselvam</groupId>
             <artifactId>cucumber-extentsreport</artifactId>
             <version>1.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
 </project>
