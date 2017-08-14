@@ -14,7 +14,7 @@ import java.io.File;
  * The Driver Factory Class has all the methods that are responsible of handling browser drivers
  */
 public class DriverFactory {
-    private static WebDriver driver = null;
+    protected static WebDriver driver = null;
     /**
      * Getting the properties in config.properties
      */
@@ -48,7 +48,7 @@ public class DriverFactory {
             System.setProperty("webdriver.gecko.driver", firefoxDriver);
             FirefoxProfile profile = new FirefoxProfile();
             profile.setPreference("intl.accept_languages", language);
-            driver = new FirefoxDriver(new FirefoxBinary(new File(firefoxBinary)), profile);
+            driver = new FirefoxDriver();
         } else if (browser.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", chromeDriver);
             ChromeOptions options = new ChromeOptions();
