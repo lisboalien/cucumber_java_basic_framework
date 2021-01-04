@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.Set;
 
 public class CommonPage {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     /**
      * Constructor of CommonPage class

@@ -19,12 +19,12 @@ public class BasicStepsTest extends DriverFactory {
     }
 
     @Given("^There is a window open$")
-    public void there_is_a_window_open() throws Throwable {
+    public void there_is_a_window_open() {
         new CommonPage(driver).there_is_a_window_open();
     }
 
     @Then("^Close all windows$")
-    public void close_all_windows() throws Throwable {
+    public void close_all_windows() {
         new CommonPage(driver).close_all_windows();
         destroyDriver();
     }
